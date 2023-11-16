@@ -1,6 +1,9 @@
-
+body{
+    background-color: skyblue;
+}
 
 #title_container{
+    background-color: white;
     width: 220px;
     height:50px;
     display: flexbox;
@@ -10,16 +13,23 @@
     margin-top:8vh;
     border: 2px solid black;
     text-align: center;
+    border-radius : 2px;
 }
 
 h1{
     margin: auto;
+    text-align: center;
+}
+
+#week_container {
+    margin-left : 20vh;
 }
 
 .week {
-    margin-top: 20px;
+    margin-top:20px;
     width: 500px;
     height: 500px;
     border : 2px solid black;
     display: inline-block;
 }
+
