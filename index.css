@@ -1,5 +1,98 @@
 body{
     background-color: skyblue;
+    text-align: center;
+}
+
+
+
+.main__title{
+    width: 230px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.main__title{
+    margin: auto;
+    margin-top:20px
+}
+
+.plan{
+    display: flex;
+    justify-content: center;
+}
+
+
+.plan__forward-btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border:none;
+    margin-top :auto;
+    margin-bottom: auto;
+}
+
+.plan__forward-btn::after {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    content: '';
+    width: 25px; /* 사이즈 */
+    height: 25px; /* 사이즈 */
+    border-top: 5px solid #000; /* 선 두께 */
+    border-right: 5px solid #000; /* 선 두께 */
+    transform: rotate(225deg); /* 각도 */
+}
+
+.plan__date{
+    width: 1000px;
+    height: 500px;
+    border : 2px solid black;
+    border-radius: 20px;
+}
+
+.plan__backward-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border:none;
+    margin-top :auto;
+    margin-bottom: auto;
+}
+
+.plan__backward-btn::after {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    content: '';
+    width: 25px; /* 사이즈 */
+    height: 25px; /* 사이즈 */
+    border-top: 5px solid #000; /* 선 두께 */
+    border-right: 5px solid #000; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+}
+
+.plan__backward-btn:hover{
+    border:2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    background-color: skyblue;
 }
 
 #title_container{
@@ -32,4 +125,4 @@ h1{
     border : 2px solid black;
     display: inline-block;
 }
-
+*/
