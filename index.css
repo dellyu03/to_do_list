@@ -3,7 +3,12 @@ body{
     text-align: center;
 }
 
-
+.main__text{
+    font-size : 30px;
+    font-family: 'Jua', sans-serif;
+    margin-top : 10px;
+    margin-bottom : 10px;   
+}
 
 .main__title{
     width: 230px;
@@ -17,7 +22,7 @@ body{
 
 .main__title{
     margin: auto;
-    margin-top:20px
+    margin-top:20px;
 }
 
 .plan{
@@ -48,15 +53,15 @@ body{
     transform: rotate(225deg); /* 각도 */
 }
 
-.plan__date{
+.plan__date-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    height: 500px;
+    height: 550px;
     border : 2px solid black;
     border-radius: 20px;
-    margin: 20px;
+    background-color: rgb(200, 229, 255);
 }
 
 .plan__backward-btn {
@@ -82,16 +87,43 @@ body{
 }
 
 .plan__date__title{
-    margin-top:15px;
-    margin-bottom: 15px;
-    font-size:30px;
-    width: 150px;
-    height: 45px;
-    border:1px solid black;
-    border-radius: 10px;
-    background-color: azure;
+    display: inline-block;
+    text-align: center;
+    margin-top:5px;
+    font-size: 65px;
+    padding:none;
+    width: 230px;
+    height: 80px;
+    font-family: 'Caveat', cursive;
+}
+.plan__modify-container{
+    display: flex;
+    justify-content: end;
+    width: 950px;
+    margin-bottom: 10px;
 }
 
+.modify-button{
+    margin-left: 10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 1000;
+    font-family: 'Jua', sans-serif;
+}
+
+.plan__add-btn{
+    background-color: greenyellow;
+}
+
+.plan__deletechoosed_btn {
+    background-color: rgb(252, 83, 83);
+}
+
+.plan__deleteall-btn {
+    background-color: rgb(252, 40, 40);
+}
 .plan__date__plan{
     width: 900px;
     height: 80px;
@@ -100,58 +132,26 @@ body{
     margin: 5px;
     background-color: white;
     opacity: 0.7;
-}
-
-.plan__check {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-}
-
-.plan__text{
-    display: inline;
-}
-
-
-
-
-
-
-
-
-/*
-body{
-    background-color: skyblue;
-}
-
-#title_container{
-    background-color: white;
-    width: 220px;
-    height:50px;
-    display: flexbox;
+    display: flex;
+    justify-content: start;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:8vh;
-    border: 2px solid black;
-    text-align: center;
-    border-radius : 2px;
 }
 
-h1{
-    margin: auto;
-    text-align: center;
-}
 
-#week_container {
-    margin-left : 20vh;
-}
-
-.week {
-    margin-top:20px;
-    width: 500px;
-    height: 500px;
-    border : 2px solid black;
+.input__check-box {
     display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 15px;
 }
-*/
+
+.input__text-box{
+    text-align: center;
+    font-size: 35px;
+    display: inline-block;
+    width: 800px;
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 20px;
+}

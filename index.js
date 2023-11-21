@@ -1,7 +1,7 @@
-function Checked(){
-    document.getElementById("plan_1") = check_sign;
+document.getElementById("check1").addEventListener('click',checked);
+
+check1 =document.getElementById("chekc1")
+function checked(){
+    check1.innerHTML("V")
 }
 
-check_sign = "V"
-
-document.getElementsByClassName("plan__check").onclick = Checked()
