@@ -135,6 +135,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    display: none;
 }
 
 
@@ -155,3 +156,4 @@ body{
     border: 2px solid black;
     border-radius: 20px;
 }
+
