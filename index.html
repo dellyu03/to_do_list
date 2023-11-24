@@ -13,18 +13,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--메인 화면의 헤더 간간-->
     <header class = "main">
         <h1 class = "main__title">What to do?</h1>
         <p class = "main__text">일정을 보고 싶은 날짜 선택</p>
     </header>
+    <!--메인 구간-->
     <div class = "plan">
-        <button class = "plan__forward-btn"></button>
+        <button class = "btn plan__forward-btn"></button>
         <div class = "plan__date-box">
             <div class = "plan__date__title">Monday</div>
             <form class = "plan__modify-container">
-                <button class = "plan__add-btn modify-button" type = "button">추가+</button>
-                <button class = "plan__deletechoosed_btn modify-button" type = "button"  >선택 삭제V</button>
-                <button class = "plan__deleteall-btn modify-button" type = "button" >전체 삭제-</button>
+                <button class = "btn plan__add-btn modify-button" type = "button">추가+</button>
+                <button class = "btn plan__deletechoosed_btn modify-button" type = "button"  >선택 삭제V</button>
+                <button class = "btn plan__deleteall-btn modify-button" type = "button" >전체 삭제-</button>
             </form>
             
             <div class = "plan__container">
@@ -46,7 +48,15 @@
                 </div>
             </div>
         </div>
-        <button class = "plan__backward-btn"></button>
+        <div class = "window__confirm">
+            <p>삭제하면 되돌릴수 없습니다. </p>
+            <p>전체 계획을 삭제 하시겠습까?</p>
+            <div class = "btn-container">
+                <button class = "btn choosebtn alldeleteyes" type = "button">네</button>               
+                <button class = "btn choosebtn alldeleteno" type = "button">아니요</button>               
+            </div>
+        </div>
+        <button class = "btn plan__backward-btn"></button>
     </div>
 </body>
 <script src="index.js"></script>
