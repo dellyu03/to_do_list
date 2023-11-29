@@ -1,11 +1,22 @@
+html {
+    height: 100%;
+    width: 100%;
+}
 body{
-    background-color: skyblue;
+    margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
 .main__text{
+    color : white;
+    text-shadow: 4px 2px 4px grey;
     font-size : 30px;
-    font-family: 'Jua', sans-serif;
+    font-weight: bold;
     margin-top : 10px;
     margin-bottom : 10px;   
 }
@@ -13,17 +24,13 @@ body{
 .main__title{
     width: 230px;
     height: 50px;
-    border: 2px solid black;
     text-align: center;
-    border-radius: 15px;
-    background-color: white;
-    opacity: 0.9;
-}
-
-.main__title{
+    color : white;
+    text-shadow: 4px 2px 15px grey;
     margin: auto;
     margin-top:20px;
 }
+
 
 .plan{
     display: flex;
@@ -54,14 +61,16 @@ body{
 }
 
 .plan__date-box{
+    margin-top : 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
     height: 550px;
-    border : 2px solid black;
+    box-shadow: 3px 3px 15px grey;
     border-radius: 20px;
-    background-color: rgb(200, 229, 255);
 }
 
 .plan__backward-btn {
@@ -87,6 +96,9 @@ body{
 }
 
 .plan__date__title{
+    color : white;
+    text-shadow: 3px 3px 5px grey;
+    font-weight: bold;
     display: inline-block;
     text-align: center;
     margin-top:5px;
@@ -94,27 +106,31 @@ body{
     padding:none;
     width: 230px;
     height: 80px;
-    font-family: 'Caveat', cursive;
 }
 .plan__modify-container{
     display: flex;
-    justify-content: end;
     width: 950px;
     margin-bottom: 10px;
 }
 
 .modify-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
     margin-left: 10px;
     width: 90px;
     height: 30px;
+    border:none;
     border-radius: 10px;
     font-size: 15px;
-    font-weight: 1000;
-    font-family: 'Jua', sans-serif;
+    color : white;
+    font-family: 'Orbit', sans-serif;
 }
 
 .plan__add-btn{
-    background-color: greenyellow;
+    background-color: #E1F1FF;
+    color : black;
 }
 
 .plan__deletechoosed_btn {
@@ -122,7 +138,7 @@ body{
 }
 
 .plan__deleteall-btn {
-    background-color: rgb(252, 40, 40);
+    background-color: #4F74AF;
 }
 .plan__date__plan{
     width: 900px;
