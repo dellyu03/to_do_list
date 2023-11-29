@@ -3,65 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What will you do?</title>
     <link href= "index.css" rel = "stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&display=swap" rel="stylesheet">
+    <title>What to do?</title>
 </head>
 <body>
-    <!--메인 화면의 헤더 간간-->
-    <header class = "main">
-        <h1 class = "main__title">What to do?</h1>
-        <p class = "main__text">일정을 보고 싶은 날짜 선택</p>
+    <header>
+        <div class = header-bar>
+            <div class = "header-bar__notion-kind">! Note:</div>
+            <div class = "header-bar__notion-content">My new Website!</div>
+        </div>
+        <div class = "icon">
+            <div class = "title">What to do?</div>
+        </div>
     </header>
-    <!--메인 구간-->
-    <div class = "plan">
-        <button class = "btn plan__forward-btn"></button>
-        <div class = "plan__date-box">
-            <div class = "plan__date__title">Monday</div>
-            <form class = "plan__modify-container">
-                <button class = "btn plan__add-btn modify-button" type = "button">추가+</button>
-                <button class = "btn plan__deletechoosed_btn modify-button" type = "button"  >선택 삭제V</button>
-                <button class = "btn plan__deleteall-btn modify-button" type = "button" >전체 삭제-</button>
-            </form>
-            
-            <div class = "plan__container">
-                <div class = "plan__date__plan">
-                    <input class = "input__check-box" type = "checkbox"></input>
-                    <input class = "input__text-box" placeholder ="오늘의 할일을 입력하세요"></input>
-                </div>
-                <div class = "plan__date__plan">
-                    <input class = "input__check-box" type = "checkbox"></input>
-                    <input class = "input__text-box" id ="check1" placeholder ="오늘의 할일을 입력하세요"></input>
-                </div>
-                <div class = "plan__date__plan">
-                    <input class = "input__check-box" type = "checkbox"></input>
-                    <input class = "input__text-box" id ="check2" placeholder ="오늘의 할일을 입력하세요"></input>
-                </div>
-                <div class = "plan__date__plan">
-                    <input class = "input__check-box" type = "checkbox"></input>
-                    <input class = "input__text-box" placeholder ="오늘의 할일을 입력하세요"></input>
-                </div>
-            </div>
+    <section>
+        <div class = plan-container>
+            <div class = plan__date>Monday</div>
         </div>
-        <div class = "window__confirm">
-            <p>삭제하면 되돌릴수 없습니다. </p>
-            <p>전체 계획을 삭제 하시겠습까?</p>
-            <div class = "btn-container">
-                <button class = "btn choosebtn alldeleteyes" type = "button">네</button>               
-                <button class = "btn choosebtn alldeleteno" type = "button">아니요</button>               
-            </div>
-        </div>
-        <button class = "btn plan__backward-btn"></button>
-    </div>
+    </section>
 </body>
-<script src="index.js"></script>
 </html>
-
-
